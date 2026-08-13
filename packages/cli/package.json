@@ -14,6 +14,13 @@
   ],
   "license": "MIT",
   "author": "Hrishikesh Joshi",
+  "homepage": "https://github.com/Hrishikesh410/repo2ds#readme",
+  "bugs": "https://github.com/Hrishikesh410/repo2ds/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hrishikesh410/repo2ds.git",
+    "directory": "packages/cli"
+  },
   "type": "module",
   "bin": {
     "repo2ds": "./dist/bin.js"

@@ -5,6 +5,12 @@
   "description": "Reverse-engineer a design system from an existing React or React Native codebase.",
   "license": "MIT",
   "author": "Hrishikesh Joshi",
+  "homepage": "https://github.com/Hrishikesh410/repo2ds#readme",
+  "bugs": "https://github.com/Hrishikesh410/repo2ds/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hrishikesh410/repo2ds.git"
+  },
   "type": "module",
   "engines": {
     "node": ">=20.19.0"
