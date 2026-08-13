@@ -1,0 +1,42 @@
+{
+  "name": "repo2ds-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Reverse-engineer a design system from an existing React or React Native codebase.",
+  "license": "MIT",
+  "author": "Hrishikesh Joshi",
+  "type": "module",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build -w @repo2ds/core && npm run build -w @repo2ds/tailwind && npm run build -w @repo2ds/nativewind && npm run build -w @repo2ds/react && npm run build -w @repo2ds/react-native && npm run build -w repo2ds",
+    "clean": "rimraf packages/*/dist",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "repo2ds": "tsx packages/cli/src/bin.ts",
+    "sync:readme": "node scripts/copy-readme.mjs",
+    "verify": "npm run format:check && npm run lint && npm run typecheck && npm run test && node scripts/copy-readme.mjs --check",
+    "release": "npm run verify && npm run clean && npm run build && npm publish -w @repo2ds/core -w @repo2ds/tailwind -w @repo2ds/nativewind -w @repo2ds/react -w @repo2ds/react-native -w repo2ds"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.0",
+    "@types/node": "^22.18.9",
+    "eslint": "^9.39.0",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.9.0",
+    "prettier": "^3.6.2",
+    "rimraf": "^6.0.1",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.0",
+    "vitest": "^3.2.4"
+  }
+}

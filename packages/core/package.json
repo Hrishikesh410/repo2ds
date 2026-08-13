@@ -1,0 +1,42 @@
+{
+  "name": "@repo2ds/core",
+  "version": "0.1.0",
+  "description": "Framework-independent models, repository scanner and analysis pipeline for Repo2DS.",
+  "keywords": [
+    "design-system",
+    "design-tokens",
+    "static-analysis",
+    "react",
+    "react-native"
+  ],
+  "license": "MIT",
+  "author": "Hrishikesh Joshi",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "tinyglobby": "^0.2.15",
+    "ts-morph": "^27.0.0"
+  }
+}

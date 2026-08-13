@@ -1,0 +1,43 @@
+{
+  "name": "@repo2ds/tailwind",
+  "version": "0.1.0",
+  "description": "Tailwind CSS utility class parser and style adapter for Repo2DS. Shared by the React and NativeWind adapters.",
+  "keywords": [
+    "repo2ds",
+    "tailwind",
+    "design-tokens",
+    "static-analysis"
+  ],
+  "license": "MIT",
+  "author": "Hrishikesh Joshi",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@repo2ds/core": "0.1.0"
+  },
+  "devDependencies": {
+    "@repo2ds/react": "0.1.0"
+  }
+}

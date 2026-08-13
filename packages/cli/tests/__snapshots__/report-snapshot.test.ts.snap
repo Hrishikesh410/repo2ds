@@ -1,0 +1,1136 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`generated stories > lists the same files for every framework in the repository 1`] = `
+{
+  "dryRun": true,
+  "files": [
+    {
+      "filePath": "src/native/Chip.stories.tsx",
+      "status": "written",
+    },
+    {
+      "filePath": "src/web/Banner.stories.tsx",
+      "status": "written",
+    },
+    {
+      "filePath": ".repo2ds/report.json",
+      "status": "written",
+    },
+    {
+      "filePath": ".repo2ds/design-tokens.json",
+      "status": "written",
+    },
+  ],
+  "layout": "beside",
+}
+`;
+
+exports[`generated stories > scaffolds both frameworks into one folder tree 1`] = `
+{
+  "dryRun": true,
+  "files": [
+    {
+      "filePath": "repo2ds/components/Chip/Chip.tsx",
+      "status": "written",
+    },
+    {
+      "filePath": "repo2ds/components/Chip/Chip.types.ts",
+      "status": "written",
+    },
+    {
+      "filePath": "repo2ds/components/Chip/Chip.example.tsx",
+      "status": "written",
+    },
+    {
+      "filePath": "repo2ds/components/Chip/index.ts",
+      "status": "written",
+    },
+    {
+      "filePath": "repo2ds/components/Chip/Chip.stories.tsx",
+      "status": "written",
+    },
+    {
+      "filePath": "repo2ds/components/Banner/Banner.tsx",
+      "status": "written",
+    },
+    {
+      "filePath": "repo2ds/components/Banner/Banner.types.ts",
+      "status": "written",
+    },
+    {
+      "filePath": "repo2ds/components/Banner/Banner.example.tsx",
+      "status": "written",
+    },
+    {
+      "filePath": "repo2ds/components/Banner/index.ts",
+      "status": "written",
+    },
+    {
+      "filePath": "repo2ds/components/Banner/Banner.stories.tsx",
+      "status": "written",
+    },
+    {
+      "filePath": "repo2ds/components/README.md",
+      "status": "written",
+    },
+    {
+      "filePath": ".repo2ds/report.json",
+      "status": "written",
+    },
+    {
+      "filePath": ".repo2ds/design-tokens.json",
+      "status": "written",
+    },
+  ],
+  "layout": "folder",
+}
+`;
+
+exports[`the scan report > matches the snapshot of the whole schema for a React project 1`] = `
+{
+  "components": [
+    {
+      "exportType": "named",
+      "filePath": "src/components/Button.tsx",
+      "framework": "react",
+      "name": "Button",
+      "props": [
+        {
+          "name": "label",
+          "rawType": "string",
+          "required": true,
+          "type": "string",
+        },
+        {
+          "defaultValue": "primary",
+          "enumValues": [
+            "primary",
+            "secondary",
+          ],
+          "name": "variant",
+          "rawType": "'primary' | 'secondary'",
+          "required": false,
+          "type": "enum",
+        },
+        {
+          "enumValues": [
+            "sm",
+            "md",
+            "lg",
+          ],
+          "name": "size",
+          "rawType": "'sm' | 'md' | 'lg'",
+          "required": false,
+          "type": "enum",
+        },
+        {
+          "name": "disabled",
+          "rawType": "boolean",
+          "required": false,
+          "type": "boolean",
+        },
+        {
+          "name": "onPress",
+          "rawType": "() => void",
+          "required": false,
+          "type": "function",
+        },
+      ],
+      "propsResolved": true,
+      "propsType": {
+        "exported": true,
+        "name": "ButtonProps",
+      },
+      "sourceLocation": {
+        "column": 17,
+        "line": 9,
+      },
+      "styles": [
+        {
+          "componentName": "Button",
+          "filePath": "src/components/Button.tsx",
+          "location": {
+            "column": 9,
+            "line": 16,
+          },
+          "property": "paddingLeft",
+          "source": "inline",
+          "value": 16,
+        },
+        {
+          "componentName": "Button",
+          "filePath": "src/components/Button.tsx",
+          "location": {
+            "column": 9,
+            "line": 17,
+          },
+          "property": "paddingRight",
+          "source": "inline",
+          "value": 16,
+        },
+        {
+          "componentName": "Button",
+          "filePath": "src/components/Button.tsx",
+          "location": {
+            "column": 9,
+            "line": 18,
+          },
+          "property": "paddingTop",
+          "source": "inline",
+          "value": 8,
+        },
+        {
+          "componentName": "Button",
+          "filePath": "src/components/Button.tsx",
+          "location": {
+            "column": 9,
+            "line": 19,
+          },
+          "property": "paddingBottom",
+          "source": "inline",
+          "value": 8,
+        },
+        {
+          "componentName": "Button",
+          "filePath": "src/components/Button.tsx",
+          "location": {
+            "column": 9,
+            "line": 20,
+          },
+          "property": "borderRadius",
+          "source": "inline",
+          "value": 8,
+        },
+        {
+          "componentName": "Button",
+          "filePath": "src/components/Button.tsx",
+          "location": {
+            "column": 9,
+            "line": 21,
+          },
+          "property": "fontSize",
+          "source": "inline",
+          "value": 14,
+        },
+        {
+          "componentName": "Button",
+          "filePath": "src/components/Button.tsx",
+          "location": {
+            "column": 9,
+            "line": 22,
+          },
+          "property": "fontWeight",
+          "source": "inline",
+          "value": "600",
+        },
+        {
+          "componentName": "Button",
+          "filePath": "src/components/Button.tsx",
+          "location": {
+            "column": 9,
+            "line": 23,
+          },
+          "property": "backgroundColor",
+          "source": "inline",
+          "value": "#2563EB",
+        },
+        {
+          "componentName": "Button",
+          "filePath": "src/components/Button.tsx",
+          "location": {
+            "column": 9,
+            "line": 23,
+          },
+          "property": "backgroundColor",
+          "source": "inline",
+          "value": "#FFFFFF",
+        },
+        {
+          "componentName": "Button",
+          "filePath": "src/components/Button.tsx",
+          "location": {
+            "column": 9,
+            "line": 24,
+          },
+          "property": "color",
+          "source": "inline",
+          "value": "#FFFFFF",
+        },
+        {
+          "componentName": "Button",
+          "filePath": "src/components/Button.tsx",
+          "location": {
+            "column": 9,
+            "line": 24,
+          },
+          "property": "color",
+          "source": "inline",
+          "value": "#111827",
+        },
+      ],
+    },
+    {
+      "exportType": "named",
+      "filePath": "src/components/Card.tsx",
+      "framework": "react",
+      "name": "Card",
+      "props": [
+        {
+          "name": "title",
+          "rawType": "string",
+          "required": true,
+          "type": "string",
+        },
+        {
+          "name": "subtitle",
+          "rawType": "string",
+          "required": false,
+          "type": "string",
+        },
+        {
+          "name": "elevated",
+          "rawType": "boolean",
+          "required": false,
+          "type": "boolean",
+        },
+        {
+          "name": "children",
+          "rawType": "ReactNode",
+          "required": false,
+          "type": "unknown",
+        },
+      ],
+      "propsResolved": true,
+      "propsType": {
+        "exported": false,
+        "name": "CardProps",
+      },
+      "sourceLocation": {
+        "column": 14,
+        "line": 10,
+      },
+      "styles": [
+        {
+          "componentName": "Card",
+          "filePath": "src/components/Card.tsx",
+          "location": {
+            "column": 9,
+            "line": 14,
+          },
+          "property": "padding",
+          "source": "inline",
+          "value": 16,
+        },
+        {
+          "componentName": "Card",
+          "filePath": "src/components/Card.tsx",
+          "location": {
+            "column": 9,
+            "line": 15,
+          },
+          "property": "margin",
+          "source": "inline",
+          "value": 8,
+        },
+        {
+          "componentName": "Card",
+          "filePath": "src/components/Card.tsx",
+          "location": {
+            "column": 9,
+            "line": 16,
+          },
+          "property": "borderRadius",
+          "source": "inline",
+          "value": 12,
+        },
+        {
+          "componentName": "Card",
+          "filePath": "src/components/Card.tsx",
+          "location": {
+            "column": 9,
+            "line": 17,
+          },
+          "property": "backgroundColor",
+          "source": "inline",
+          "value": "#FFFFFF",
+        },
+        {
+          "componentName": "Card",
+          "filePath": "src/components/Card.tsx",
+          "location": {
+            "column": 20,
+            "line": 20,
+          },
+          "property": "fontSize",
+          "source": "inline",
+          "value": 16,
+        },
+        {
+          "componentName": "Card",
+          "filePath": "src/components/Card.tsx",
+          "location": {
+            "column": 34,
+            "line": 20,
+          },
+          "property": "fontWeight",
+          "source": "inline",
+          "value": "600",
+        },
+        {
+          "componentName": "Card",
+          "filePath": "src/components/Card.tsx",
+          "location": {
+            "column": 53,
+            "line": 20,
+          },
+          "property": "color",
+          "source": "inline",
+          "value": "#111827",
+        },
+        {
+          "componentName": "Card",
+          "filePath": "src/components/Card.tsx",
+          "location": {
+            "column": 24,
+            "line": 22,
+          },
+          "property": "fontSize",
+          "source": "inline",
+          "value": 14,
+        },
+        {
+          "componentName": "Card",
+          "filePath": "src/components/Card.tsx",
+          "location": {
+            "column": 38,
+            "line": 22,
+          },
+          "property": "color",
+          "source": "inline",
+          "value": "#6B7280",
+        },
+      ],
+    },
+    {
+      "exportType": "default",
+      "filePath": "src/components/Input.tsx",
+      "framework": "react",
+      "name": "Input",
+      "props": [
+        {
+          "name": "value",
+          "rawType": "string",
+          "required": true,
+          "type": "string",
+        },
+        {
+          "name": "placeholder",
+          "rawType": "string",
+          "required": false,
+          "type": "string",
+        },
+        {
+          "name": "invalid",
+          "rawType": "boolean",
+          "required": false,
+          "type": "boolean",
+        },
+        {
+          "name": "onChange",
+          "rawType": "(value: string) => void",
+          "required": true,
+          "type": "function",
+        },
+      ],
+      "propsResolved": true,
+      "propsType": {
+        "exported": false,
+        "name": "InputProps",
+      },
+      "sourceLocation": {
+        "column": 25,
+        "line": 8,
+      },
+      "styles": [
+        {
+          "componentName": "Input",
+          "filePath": "src/components/Input.tsx",
+          "location": {
+            "column": 9,
+            "line": 15,
+          },
+          "property": "padding",
+          "source": "inline",
+          "value": 8,
+        },
+        {
+          "componentName": "Input",
+          "filePath": "src/components/Input.tsx",
+          "location": {
+            "column": 9,
+            "line": 16,
+          },
+          "property": "borderRadius",
+          "source": "inline",
+          "value": 4,
+        },
+        {
+          "componentName": "Input",
+          "filePath": "src/components/Input.tsx",
+          "location": {
+            "column": 9,
+            "line": 17,
+          },
+          "property": "fontSize",
+          "source": "inline",
+          "value": 14,
+        },
+        {
+          "componentName": "Input",
+          "filePath": "src/components/Input.tsx",
+          "location": {
+            "column": 9,
+            "line": 18,
+          },
+          "property": "color",
+          "source": "inline",
+          "value": "#111827",
+        },
+        {
+          "componentName": "Input",
+          "filePath": "src/components/Input.tsx",
+          "location": {
+            "column": 9,
+            "line": 19,
+          },
+          "property": "borderColor",
+          "source": "inline",
+          "value": "#DC2626",
+        },
+        {
+          "componentName": "Input",
+          "filePath": "src/components/Input.tsx",
+          "location": {
+            "column": 9,
+            "line": 19,
+          },
+          "property": "borderColor",
+          "source": "inline",
+          "value": "#D1D5DB",
+        },
+      ],
+    },
+    {
+      "exportType": "named",
+      "filePath": "src/components/Modal.tsx",
+      "framework": "react",
+      "name": "Modal",
+      "props": [
+        {
+          "name": "open",
+          "rawType": "boolean",
+          "required": true,
+          "type": "boolean",
+        },
+        {
+          "name": "title",
+          "rawType": "string",
+          "required": true,
+          "type": "string",
+        },
+        {
+          "name": "onClose",
+          "rawType": "() => void",
+          "required": true,
+          "type": "function",
+        },
+      ],
+      "propsResolved": true,
+      "propsType": {
+        "exported": false,
+        "name": "ModalProps",
+      },
+      "sourceLocation": {
+        "column": 14,
+        "line": 9,
+      },
+      "styles": [
+        {
+          "componentName": "Modal",
+          "filePath": "src/components/Modal.tsx",
+          "location": {
+            "column": 21,
+            "line": 15,
+          },
+          "property": "padding",
+          "source": "inline",
+          "value": 24,
+        },
+        {
+          "componentName": "Modal",
+          "filePath": "src/components/Modal.tsx",
+          "location": {
+            "column": 34,
+            "line": 15,
+          },
+          "property": "borderRadius",
+          "source": "inline",
+          "value": 16,
+        },
+        {
+          "componentName": "Modal",
+          "filePath": "src/components/Modal.tsx",
+          "location": {
+            "column": 52,
+            "line": 15,
+          },
+          "property": "backgroundColor",
+          "source": "inline",
+          "value": "#FFFFFF",
+        },
+        {
+          "componentName": "Modal",
+          "filePath": "src/components/Modal.tsx",
+          "location": {
+            "column": 22,
+            "line": 16,
+          },
+          "property": "fontSize",
+          "source": "inline",
+          "value": 20,
+        },
+        {
+          "componentName": "Modal",
+          "filePath": "src/components/Modal.tsx",
+          "location": {
+            "column": 36,
+            "line": 16,
+          },
+          "property": "fontWeight",
+          "source": "inline",
+          "value": "700",
+        },
+      ],
+    },
+  ],
+  "diagnostics": [],
+  "project": {
+    "frameworks": [
+      "react",
+    ],
+    "name": "react-basic-fixture",
+    "stylingSystems": [],
+  },
+  "schemaVersion": 1,
+  "statistics": {
+    "colorValues": 2,
+    "components": 4,
+    "filesScanned": 5,
+    "radiusValues": 0,
+    "shadowValues": 0,
+    "spacingValues": 2,
+    "typographyValues": 2,
+  },
+  "tokenCandidates": [
+    {
+      "category": "color",
+      "confidence": 0.57,
+      "evidence": [
+        "Used 4 times",
+        "Used by 3 components",
+        "Used for backgroundColor in 3 locations",
+        "Repeated across 3 files",
+      ],
+      "locations": [
+        "src/components/Button.tsx:23:9",
+        "src/components/Button.tsx:24:9",
+        "src/components/Card.tsx:17:9",
+        "src/components/Modal.tsx:15:52",
+      ],
+      "usageCount": 4,
+      "value": "#FFFFFF",
+    },
+    {
+      "category": "color",
+      "confidence": 0.55,
+      "evidence": [
+        "Used 3 times",
+        "Used by 3 components",
+        "Used for color in 3 locations",
+        "Repeated across 3 files",
+      ],
+      "locations": [
+        "src/components/Button.tsx:24:9",
+        "src/components/Card.tsx:20:53",
+        "src/components/Input.tsx:18:9",
+      ],
+      "usageCount": 3,
+      "value": "#111827",
+    },
+    {
+      "category": "spacing",
+      "confidence": 0.57,
+      "evidence": [
+        "Used 4 times",
+        "Used by 3 components",
+        "Used for margin in 1 location",
+        "Repeated across 3 files",
+      ],
+      "locations": [
+        "src/components/Button.tsx:18:9",
+        "src/components/Button.tsx:19:9",
+        "src/components/Card.tsx:15:9",
+        "src/components/Input.tsx:15:9",
+      ],
+      "usageCount": 4,
+      "value": 8,
+    },
+    {
+      "category": "spacing",
+      "confidence": 0.5,
+      "evidence": [
+        "Used 3 times",
+        "Used by 2 components",
+        "Used for padding in 1 location",
+        "Repeated across 2 files",
+      ],
+      "locations": [
+        "src/components/Button.tsx:16:9",
+        "src/components/Button.tsx:17:9",
+        "src/components/Card.tsx:14:9",
+      ],
+      "usageCount": 3,
+      "value": 16,
+    },
+    {
+      "category": "typography",
+      "confidence": 0.55,
+      "evidence": [
+        "Used 3 times",
+        "Used by 3 components",
+        "Used for fontSize in 3 locations",
+        "Repeated across 3 files",
+      ],
+      "locations": [
+        "src/components/Button.tsx:21:9",
+        "src/components/Card.tsx:22:24",
+        "src/components/Input.tsx:17:9",
+      ],
+      "usageCount": 3,
+      "value": 14,
+    },
+    {
+      "category": "typography",
+      "confidence": 0.47,
+      "evidence": [
+        "Used 2 times",
+        "Used by 2 components",
+        "Used for fontWeight in 2 locations",
+        "Repeated across 2 files",
+      ],
+      "locations": [
+        "src/components/Button.tsx:22:9",
+        "src/components/Card.tsx:20:34",
+      ],
+      "usageCount": 2,
+      "value": 600,
+    },
+  ],
+}
+`;
+
+exports[`the scan report > matches the summary for a NativeWind project 1`] = `
+{
+  "components": [
+    {
+      "filePath": "src/components/Button.tsx",
+      "framework": "react-native",
+      "name": "Button",
+      "props": [
+        "label: string",
+        "variant: enum",
+        "onPress: function",
+      ],
+      "styleCount": 11,
+      "styleSources": [
+        "nativewind",
+      ],
+    },
+    {
+      "filePath": "src/components/Card.tsx",
+      "framework": "react-native",
+      "name": "Card",
+      "props": [
+        "title: string",
+        "subtitle: string",
+      ],
+      "styleCount": 12,
+      "styleSources": [
+        "nativewind",
+        "stylesheet",
+      ],
+    },
+  ],
+  "diagnostics": [],
+  "project": {
+    "frameworks": [
+      "react-native",
+    ],
+    "name": "react-native-nativewind-fixture",
+    "stylingSystems": [
+      "nativewind",
+      "tailwind",
+    ],
+  },
+  "statistics": {
+    "colorValues": 1,
+    "components": 2,
+    "filesScanned": 3,
+    "radiusValues": 1,
+    "shadowValues": 0,
+    "spacingValues": 2,
+    "typographyValues": 2,
+  },
+  "tokenCandidates": [
+    {
+      "category": "color",
+      "confidence": 0.47,
+      "usageCount": 2,
+      "value": "white",
+    },
+    {
+      "category": "spacing",
+      "confidence": 0.54,
+      "usageCount": 5,
+      "value": 16,
+    },
+    {
+      "category": "spacing",
+      "confidence": 0.39,
+      "usageCount": 2,
+      "value": 8,
+    },
+    {
+      "category": "typography",
+      "confidence": 0.5,
+      "usageCount": 3,
+      "value": 14,
+    },
+    {
+      "category": "typography",
+      "confidence": 0.47,
+      "usageCount": 2,
+      "value": 600,
+    },
+    {
+      "category": "radius",
+      "confidence": 0.5,
+      "usageCount": 3,
+      "value": 8,
+    },
+  ],
+}
+`;
+
+exports[`the scan report > matches the summary for a React Native project 1`] = `
+{
+  "components": [
+    {
+      "filePath": "src/components/Button.tsx",
+      "framework": "react-native",
+      "name": "Button",
+      "props": [
+        "label: string",
+        "variant: enum",
+        "disabled: boolean",
+        "onPress: function",
+      ],
+      "styleCount": 9,
+      "styleSources": [
+        "stylesheet",
+      ],
+    },
+    {
+      "filePath": "src/components/Card.tsx",
+      "framework": "react-native",
+      "name": "Card",
+      "props": [
+        "title: string",
+        "subtitle: string",
+        "elevation: number",
+      ],
+      "styleCount": 13,
+      "styleSources": [
+        "stylesheet",
+      ],
+    },
+    {
+      "filePath": "src/components/Screen.tsx",
+      "framework": "react-native",
+      "name": "Screen",
+      "props": [
+        "children: unknown",
+      ],
+      "styleCount": 4,
+      "styleSources": [
+        "inline",
+      ],
+    },
+  ],
+  "diagnostics": [
+    "dynamic-style warning",
+  ],
+  "project": {
+    "frameworks": [
+      "react-native",
+    ],
+    "name": "react-native-basic-fixture",
+    "stylingSystems": [],
+  },
+  "statistics": {
+    "colorValues": 1,
+    "components": 3,
+    "filesScanned": 3,
+    "radiusValues": 1,
+    "shadowValues": 0,
+    "spacingValues": 2,
+    "typographyValues": 2,
+  },
+  "tokenCandidates": [
+    {
+      "category": "color",
+      "confidence": 0.55,
+      "usageCount": 3,
+      "value": "#FFFFFF",
+    },
+    {
+      "category": "spacing",
+      "confidence": 0.55,
+      "usageCount": 3,
+      "value": 16,
+    },
+    {
+      "category": "spacing",
+      "confidence": 0.47,
+      "usageCount": 2,
+      "value": 8,
+    },
+    {
+      "category": "typography",
+      "confidence": 0.47,
+      "usageCount": 2,
+      "value": 14,
+    },
+    {
+      "category": "typography",
+      "confidence": 0.47,
+      "usageCount": 2,
+      "value": 600,
+    },
+    {
+      "category": "radius",
+      "confidence": 0.47,
+      "usageCount": 2,
+      "value": 8,
+    },
+  ],
+}
+`;
+
+exports[`the scan report > matches the summary for a Tailwind project 1`] = `
+{
+  "components": [
+    {
+      "filePath": "src/components/Badge.tsx",
+      "framework": "react",
+      "name": "Badge",
+      "props": [
+        "label: string",
+        "tone: enum",
+      ],
+      "styleCount": 12,
+      "styleSources": [
+        "tailwind",
+      ],
+    },
+    {
+      "filePath": "src/components/Button.tsx",
+      "framework": "react",
+      "name": "Button",
+      "props": [
+        "label: string",
+        "variant: enum",
+        "size: enum",
+        "disabled: boolean",
+      ],
+      "styleCount": 5,
+      "styleSources": [
+        "tailwind",
+      ],
+    },
+    {
+      "filePath": "src/components/Card.tsx",
+      "framework": "react",
+      "name": "Card",
+      "props": [
+        "title: string",
+        "subtitle: string",
+        "elevated: boolean",
+      ],
+      "styleCount": 12,
+      "styleSources": [
+        "tailwind",
+      ],
+    },
+  ],
+  "diagnostics": [],
+  "project": {
+    "frameworks": [
+      "react",
+    ],
+    "name": "react-tailwind-fixture",
+    "stylingSystems": [
+      "tailwind",
+    ],
+  },
+  "statistics": {
+    "colorValues": 1,
+    "components": 3,
+    "filesScanned": 4,
+    "radiusValues": 1,
+    "shadowValues": 0,
+    "spacingValues": 2,
+    "typographyValues": 2,
+  },
+  "tokenCandidates": [
+    {
+      "category": "color",
+      "confidence": 0.47,
+      "usageCount": 2,
+      "value": "gray-900",
+    },
+    {
+      "category": "spacing",
+      "confidence": 0.59,
+      "usageCount": 5,
+      "value": 16,
+    },
+    {
+      "category": "spacing",
+      "confidence": 0.5,
+      "usageCount": 3,
+      "value": 8,
+    },
+    {
+      "category": "typography",
+      "confidence": 0.57,
+      "usageCount": 4,
+      "value": 14,
+    },
+    {
+      "category": "typography",
+      "confidence": 0.47,
+      "usageCount": 2,
+      "value": 600,
+    },
+    {
+      "category": "radius",
+      "confidence": 0.57,
+      "usageCount": 4,
+      "value": 8,
+    },
+  ],
+}
+`;
+
+exports[`the scan report > matches the summary for a repository holding both frameworks 1`] = `
+{
+  "components": [
+    {
+      "filePath": "src/native/Chip.tsx",
+      "framework": "react-native",
+      "name": "Chip",
+      "props": [
+        "label: string",
+        "selected: boolean",
+      ],
+      "styleCount": 7,
+      "styleSources": [
+        "stylesheet",
+      ],
+    },
+    {
+      "filePath": "src/web/Banner.tsx",
+      "framework": "react",
+      "name": "Banner",
+      "props": [
+        "title: string",
+        "tone: enum",
+        "dismissible: boolean",
+        "onDismiss: function",
+      ],
+      "styleCount": 13,
+      "styleSources": [
+        "inline",
+        "stylesheet",
+      ],
+    },
+  ],
+  "diagnostics": [],
+  "project": {
+    "frameworks": [
+      "react",
+      "react-native",
+    ],
+    "name": "react-mixed-fixture",
+    "stylingSystems": [],
+  },
+  "statistics": {
+    "colorValues": 2,
+    "components": 2,
+    "filesScanned": 2,
+    "radiusValues": 1,
+    "shadowValues": 0,
+    "spacingValues": 1,
+    "typographyValues": 2,
+  },
+  "tokenCandidates": [
+    {
+      "category": "color",
+      "confidence": 0.52,
+      "usageCount": 3,
+      "value": "#2563EB",
+    },
+    {
+      "category": "color",
+      "confidence": 0.47,
+      "usageCount": 2,
+      "value": "#FFFFFF",
+    },
+    {
+      "category": "spacing",
+      "confidence": 0.55,
+      "usageCount": 4,
+      "value": 16,
+    },
+    {
+      "category": "typography",
+      "confidence": 0.55,
+      "usageCount": 4,
+      "value": 14,
+    },
+    {
+      "category": "typography",
+      "confidence": 0.47,
+      "usageCount": 2,
+      "value": 600,
+    },
+    {
+      "category": "radius",
+      "confidence": 0.52,
+      "usageCount": 3,
+      "value": 8,
+    },
+  ],
+}
+`;

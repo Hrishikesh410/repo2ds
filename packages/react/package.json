@@ -1,0 +1,41 @@
+{
+  "name": "@repo2ds/react",
+  "version": "0.1.0",
+  "description": "React framework adapter for Repo2DS: component discovery, prop extraction, style extraction and Storybook generation.",
+  "keywords": [
+    "repo2ds",
+    "react",
+    "design-system",
+    "static-analysis"
+  ],
+  "license": "MIT",
+  "author": "Hrishikesh Joshi",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@repo2ds/core": "0.1.0",
+    "ts-morph": "^27.0.0"
+  }
+}

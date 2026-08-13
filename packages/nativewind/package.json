@@ -1,0 +1,44 @@
+{
+  "name": "@repo2ds/nativewind",
+  "version": "0.1.0",
+  "description": "NativeWind style adapter for Repo2DS, built on the shared Tailwind parser.",
+  "keywords": [
+    "repo2ds",
+    "nativewind",
+    "react-native",
+    "design-tokens"
+  ],
+  "license": "MIT",
+  "author": "Hrishikesh Joshi",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@repo2ds/core": "0.1.0",
+    "@repo2ds/tailwind": "0.1.0"
+  },
+  "devDependencies": {
+    "@repo2ds/react-native": "0.1.0"
+  }
+}

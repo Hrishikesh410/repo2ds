@@ -1,0 +1,20 @@
+:root {
+  --brand: #2563eb;
+  --surface: #ffffff;
+  --space-md: 16px;
+  --radius-md: 8px;
+}
+
+.banner {
+  background-color: var(--brand);
+  color: var(--surface);
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  font-size: 14px;
+}
+
+.banner__title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: var(--space-md);
+}

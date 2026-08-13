@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        node: [20, 22, 24]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm run verify
+
+      - run: npm run build
+
+      # A published package is only as good as the CLI it installs, so run the
+      # built binary against the fixtures the way a user would.
+      - run: node packages/cli/dist/bin.js scan fixtures/react-basic
+      - run: node packages/cli/dist/bin.js scan fixtures/react-native-nativewind --json
+      - run: node packages/cli/dist/bin.js generate fixtures/react-mixed --dry-run
